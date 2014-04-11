@@ -116,19 +116,19 @@ function domloaded(){
   });
 
   $('#bounce_left').on('change', function(){
-    bounceLeft = !!$(this).val();
+    bounceLeft = $(this).is(':checked');
   });
 
   $('#bounce_right').on('change', function(){
-    bounceRight = !!$(this).val();
+    bounceRight = $(this).is(':checked');
   });
 
   $('#bounce_top').on('change', function(){
-    bounceTop = !!$(this).val();
+    bounceTop = $(this).is(':checked');
   });
 
   $('#bounce_bot').on('change', function(){
-    bounceBot = !!$(this).val();
+    bounceBot = $(this).is(':checked');
   });
 
   $('#numParts').on('change', function(){
