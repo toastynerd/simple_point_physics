@@ -1,0 +1,25 @@
+#controls {
+    float: clear;
+}
+
+#controls div {
+    float: left;
+    border: 1px solid;
+    width: 10%;
+}
+
+#start_simulation {
+    background-color: #000;
+    color: #fff;
+    width: 1000px;
+}
+
+h4 {
+    padding: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    max-width: 80%;
+}

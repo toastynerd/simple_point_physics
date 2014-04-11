@@ -1,0 +1,9 @@
+{
+  "name": "point_physics_demo",
+  "description": "a simple point physics engine",
+  "version": "0.0.1",
+  "main": "app.js",
+  "dependencies": {
+    "express": "3.*"
+  }
+}

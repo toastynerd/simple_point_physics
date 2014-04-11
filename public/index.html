@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+        <script src="jquery-2.1.0.min.js" type="text/javascript"></script>
+        <script src="particle_mass.js" type="text/javascript"></script>
+
+      <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+      <canvas id="canvas1" height="500" width="1000">You Don't Have Canvas Enabled</canvas>
+      <button id="start_simulation">Start</button>
+
+      <div id="controls">
+        <div id="globals">
+          <h4>Global</h4>
+          <label for="gravity">Gravity</label>
+          <input type="text" id="gravity" value="0.0"/>
+          <label for="gravity">Friction</label>
+          <input type="text" id="friction" value="0.0"/>
+        </div>
+
+        <div id="bounces">
+          <h4>Side Bounces</h4>
+          <label for="bounce_left">Bounce Left</label>
+          <input type="checkbox" id="bounce_left"/>
+          <label for="bounce_right">Bounce Right</label>
+          <input type="checkbox" id="bounce_right"/>
+          <label for="bounce_top">Bounce Top</label>
+          <input type="checkbox" id="bounce_top"/>
+          <label for="bounce_bottom">Bounce Bottom</label>
+          <input type="checkbox" id="bounce_bot"/>
+        </div>
+
+        <div id="starting_position">
+          <h4>Starting Position</h4>
+          <label for="numParts">Number of Particles</label>
+          <input type="text" id="numParts" value="25" />
+          <label for="startX">Starting X</label>
+          <input type="text" id="startX" value="500"/>
+          <label for="startY">Starting Y</label>
+          <input type="text" id="startY" value="250"/>
+          <label for="startRandomness">Randomness</label>
+          <input type="text" id="startRandomness" value="0"/>
+        </div>
+
+        <div id="starting_forces">
+          <h4>Starting Forces</h4>
+          <label for="forceLeft">Force Left</label>
+          <input type="text" id="forceLeft" value="1.0"/>
+          <label for="forceRight">Force Right</label>
+          <input type="text" id="forceRight" value="1.0"/>
+          <label for="forceUp">Force Up</label>
+          <input type="text" id="forceUp" value="1.0"/>
+          <label for="forceDown">Force Down</label>
+          <input type="text" id="forceDown" value="1.0"/>
+          <label for="forceDuration">Force Duration</label>
+          <input type="text" id="forceDuration" value="1.0"/>
+        </div>
+      </div>
+    </body>
+</html>
