@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded',domloaded,false);
 function domloaded(){
   var canvas1 = document.getElementById('canvas1');
   var context1 = canvas1.getContext('2d');
-  var friction = 1.5;
+  var friction = 0.05;
+  var gravity = 0.1;
 
   var particles = [];
 
@@ -58,7 +59,8 @@ function domloaded(){
     for(var i = 0; i < particles.length; i++) {
       particles[i].drawParticle(context);
       particles[i].updateParticle(canvas.width, canvas.height);
-      particles[i].forces.push(new Force(0, 0, 1));
+      particles[i].forces.push(new Force(0, gravity, 1));
+      particles[i].forces.push(new Force(particles[i].velocity.x * -friction, particles[i].velocity.y * -friction, 1));
     }
   }
 
